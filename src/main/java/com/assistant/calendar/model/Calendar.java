@@ -2,39 +2,34 @@ package com.assistant.calendar.model;
 
 import java.util.Date;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table(name = "calendar")
+//@Entity
+//@Table(name = "calendar")
 public class Calendar {
 
-	@Id
-	@Column(name = "Timestamp")
+//	@Id
+//	@Column(name = "Timestamp")
 	private Date Timestamp;
 
-	@Column(name = "title")
+//	@Column(name = "title")
 	private String title;
 
-	@Column(name = "description")
+//	@Column(name = "description")
 	private String description;
 
-	@Column(name = "start_time")
+//	@Column(name = "start_time")
 	private Date start_time;
 
-	@Id
-	@Column(name = "end_time")
+//	@Id
+//	@Column(name = "end_time")
 	private Date end_time;
 
-	@Column(name = "required")
+//	@Column(name = "required")
 	private String required;
 
-	@Column(name = "optional")
+//	@Column(name = "optional")
 	private String optional;
 
-	@Column(name = "priority")
+//	@Column(name = "priority")
 	private String priority;
 
 	public Calendar() {

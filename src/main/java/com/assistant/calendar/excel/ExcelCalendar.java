@@ -33,8 +33,9 @@ public class ExcelCalendar {
 	public static List<Calendar> excelToCalendar(InputStream is) {
 		try {
 			Workbook workbook = new XSSFWorkbook(is);
-
-			Sheet sheet = workbook.getSheet(SHEET);
+			 Sheet datatypeSheet = workbook.getSheetAt(0);
+			String sheetName = workbook.getSheetName(0);
+			Sheet sheet = workbook.getSheet(sheetName);
 			Iterator<Row> rows = sheet.iterator();
 
 			List<Calendar> Calendars = new ArrayList<Calendar>();
